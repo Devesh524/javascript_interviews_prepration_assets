@@ -1,0 +1,20 @@
+# Ignore the build directory
+/build/
+
+# Ignore the coverage directory
+/coverage/
+
+# Ignore the dist directory
+/dist/
+
+# Ignore the node_modules directory
+/node_modules/
+
+# Ignore the public directory
+/public/
+
+!/package-lock.json
+!/.replit
+
+/.env
+/.idea

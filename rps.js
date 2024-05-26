@@ -1,6 +1,6 @@
 var rps = function (round) {
   let result = [];
-  let possibleCases = ['r', 'p', 's'];
+  let possibleCases = ["r", "p", "s"];
 
   var play = function (playedFor, round) {
     if (round === 0) {
@@ -12,7 +12,7 @@ var rps = function (round) {
     }
   };
 
-  play('', round);
+  play("", round);
   return result;
 };
 

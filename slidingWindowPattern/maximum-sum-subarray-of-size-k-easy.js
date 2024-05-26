@@ -29,4 +29,4 @@ const findMaximumSumSubarrayOfSizeK = (list, k) => {
 };
 
 console.log(findMaximumSumSubarrayOfSizeK([2, 1, 5, 1, 3, 2], 3)); // 9
-console.log(findMaximumSumSubarrayOfSizeK([2, 3, 4, 1, 5], 2))
+console.log(findMaximumSumSubarrayOfSizeK([2, 3, 4, 1, 5], 2));

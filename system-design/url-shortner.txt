@@ -1,0 +1,4 @@
+// system design for url shortner in node js
+const express = require("express"); //importing the express module from npm package.
+var app=express(); 	//creating an instance of express class and assigning it to variable
+

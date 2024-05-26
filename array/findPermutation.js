@@ -6,9 +6,9 @@ const permutations = (arr) => {
         permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [
           item,
           ...val,
-        ])
+        ]),
       ),
-    []
+    [],
   );
 };
 let result = permutations([1, 2, 3]);

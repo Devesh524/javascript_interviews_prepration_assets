@@ -30,45 +30,45 @@
  * @return {number}
  */
 
-const longestPalindrome = function(s) {
-	const len = s.length;
-	if (len < 2) return s;
+const longestPalindrome = function (s) {
+  const len = s.length;
+  if (len < 2) return s;
 
-	let max = 0;
-	let start = 0;
-	let end = len - 1;
+  let max = 0;
+  let start = 0;
+  let end = len - 1;
 
-	for (let i =0; i < len; i++) {
-		let left = i;
-		let right = i;
-		
-		while (left >= 0 && right < len && s[left] === s[right]) {
-			left--;
-			right++;
-		}
-		left++;
-		right--;
-		if (right - left + 1 > max) {
-			max = right - left + 1;
-			start = left;
-			end = right;
-		}
+  for (let i = 0; i < len; i++) {
+    let left = i;
+    let right = i;
 
-		left = i;
-		right = i + 1;
-		while (left >= 0 && right < len && s[left] === s[right]) {
-			left--;
-			right++;
-		}
-		left++;
-		right--;
-		if (right - left + 1 > max) {
-			max = right - left + 1;
-			start = left;
-			end = right;
-		}
-	}
-	return s.substring(start, end + 1);
+    while (left >= 0 && right < len && s[left] === s[right]) {
+      left--;
+      right++;
+    }
+    left++;
+    right--;
+    if (right - left + 1 > max) {
+      max = right - left + 1;
+      start = left;
+      end = right;
+    }
+
+    left = i;
+    right = i + 1;
+    while (left >= 0 && right < len && s[left] === s[right]) {
+      left--;
+      right++;
+    }
+    left++;
+    right--;
+    if (right - left + 1 > max) {
+      max = right - left + 1;
+      start = left;
+      end = right;
+    }
+  }
+  return s.substring(start, end + 1);
 };
 
 const result = longestPalindrome("babad");

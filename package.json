@@ -1,0 +1,24 @@
+{
+  "name": "js_algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": ",",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "3.2.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
