@@ -103,9 +103,9 @@ const threeSum = function (nums) {
   // remove duplicates
   const set = new Set();
   for (let i = 0; i < result.length; i++) {
-    set.add(result[i].join(","));
+    set.add(result[i].join(','));
   }
-  return [...set].map((x) => x.split(",").map(Number));
+  return [...set].map((x) => x.split(',').map(Number));
 };
 
 const result = threeSum([-1, 0, 1, 2, -1, -4]);

@@ -1,4 +1,4 @@
-const arr = ["a", "b", "c", "d"];
+const arr = ['a', 'b', 'c', 'd'];
 
 Array.prototype.customForEach = function (processMap, context) {
   for (let i = 0; i < this.length; i++) {

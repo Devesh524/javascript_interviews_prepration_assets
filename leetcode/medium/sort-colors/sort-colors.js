@@ -94,5 +94,5 @@ const result = sortColors([2, 0, 2, 1, 1, 0]);
 const resultBetter = sortColorBetter([2, 0, 2, 1, 1, 0]);
 const resultOptimised = sortColorOptimised([2, 0, 2, 1, 1, 0]);
 console.log(result); // [0,0,1,1,2,2]
-console.log(resultBetter, "resultBetter"); // [0,0,1,1,2,2]
-console.log(resultOptimised, "resultOptimised"); // [0,0,1,1,2,2]
+console.log(resultBetter, 'resultBetter'); // [0,0,1,1,2,2]
+console.log(resultOptimised, 'resultOptimised'); // [0,0,1,1,2,2]

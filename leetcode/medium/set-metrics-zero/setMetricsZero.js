@@ -23,12 +23,12 @@ const setZeroesBruteForce = (matrix) => {
       if (newMetrix[i][j] === 0) {
         for (let k = 0; k < rows; k++) {
           if (newMetrix[k][j] !== 0) {
-            newMetrix[k][j] = "x";
+            newMetrix[k][j] = 'x';
           }
         }
         for (let k = 0; k < cols; k++) {
           if (newMetrix[i][k] !== 0) {
-            newMetrix[i][k] = "x";
+            newMetrix[i][k] = 'x';
           }
         }
       }
@@ -38,7 +38,7 @@ const setZeroesBruteForce = (matrix) => {
   // order of n * m
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
-      if (newMetrix[i][j] == "x") {
+      if (newMetrix[i][j] == 'x') {
         newMetrix[i][j] = 0;
       }
     }

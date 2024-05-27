@@ -1,12 +1,12 @@
 const binarySearch = (arr, number, start, end) => {
   console.log(arr, number, start, end);
   if (start > end) {
-    return "not found";
+    return 'not found';
   }
   let mid = Math.floor((start + end) / 2);
 
   if (arr[mid] === number) {
-    return "found at index: " + mid;
+    return 'found at index: ' + mid;
   }
   if (arr[mid] > number) {
     return binarySearch(arr, number, 0, mid - 1);

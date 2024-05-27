@@ -112,7 +112,7 @@ class BST {
   inOrderTraversal(root) {
     if (root !== null) {
       this.inOrderTraversal(root.left);
-      console.log(root.data, "inOrderTraversal");
+      console.log(root.data, 'inOrderTraversal');
       this.inOrderTraversal(root.right);
     }
   }
@@ -121,13 +121,13 @@ class BST {
     if (root !== null) {
       this.postOrderTraversal(root.left);
       this.postOrderTraversal(root.right);
-      console.log(root.data, "postOrderTraversal");
+      console.log(root.data, 'postOrderTraversal');
     }
   }
 
   preOrderTraversal(root) {
     if (root !== null) {
-      console.log(root.data, "preOrderTraversal");
+      console.log(root.data, 'preOrderTraversal');
       this.preOrderTraversal(root.left);
       this.preOrderTraversal(root.right);
     }

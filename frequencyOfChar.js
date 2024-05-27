@@ -1,5 +1,5 @@
 const getFrequency = (frequencyString) => {
-  let stringArray = frequencyString.split("");
+  let stringArray = frequencyString.split('');
   let frequencies = {};
   for (let k in stringArray) {
     let nowLetter = stringArray[k];
@@ -14,5 +14,5 @@ const getFrequency = (frequencyString) => {
   return frequencies;
 };
 
-let str = "deveshagnihotri";
+let str = 'deveshagnihotri';
 console.log(getFrequency(str));

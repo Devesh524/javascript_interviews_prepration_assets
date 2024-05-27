@@ -12,7 +12,7 @@ var threeSum = function (nums) {
           resultSum.push(x + y + z);
           // console.log(x+y+z)
           resultSum.filter((sum, i) => {
-            console.log(sum, "sum");
+            console.log(sum, 'sum');
             if (sum !== x + y + z) {
               result.push([x, y, z]);
             }

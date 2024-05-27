@@ -85,7 +85,7 @@ const maxSubArrayOptimised = (nums) => {
   console.log(
     startIndex,
     endIndex,
-    "startIndex, endIndex",
+    'startIndex, endIndex',
     nums.slice(startIndex, endIndex + 1),
   );
   return maxSum;
@@ -95,4 +95,4 @@ const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 const result = maxSubArray(nums);
 const result2 = maxSubArrayOptimised(nums);
 console.log(result);
-console.log(result2, "result2");
+console.log(result2, 'result2');
