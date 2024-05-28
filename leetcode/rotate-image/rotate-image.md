@@ -1,4 +1,3 @@
-
 ## Constraints
 
 - `n == matrix.length == matrix[i].length`
@@ -28,7 +27,7 @@ This algorithm rotates the matrix in place without using additional space.
  */
 const rotateInPlace = (matrix) => {
   const n = matrix.length;
-  
+
   // Step 1: Transpose the matrix
   for (let i = 0; i < n; i++) {
     for (let j = i + 1; j < n; j++) {
@@ -40,13 +39,15 @@ const rotateInPlace = (matrix) => {
   for (let i = 0; i < n; i++) {
     matrix[i].reverse();
   }
-  
+
   return matrix;
 };
 
 // Example usage:
-const matrix2 = [  [1, 2, 3],
+const matrix2 = [
+  [1, 2, 3],
   [4, 5, 6],
-  [7, 8, 9]
+  [7, 8, 9],
 ];
 console.log(rotateInPlace(matrix2)); // Output: [[7,4,1],[8,5,2],[9,6,3]]
+```
