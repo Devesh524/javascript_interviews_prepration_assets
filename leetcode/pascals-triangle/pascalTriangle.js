@@ -49,7 +49,7 @@ const test = (numRow) => {
 };
 const startTime = new Date();
 const numRows = 5;
-console.log(test(numRows)); // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+console.log(generate(numRows)); // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 const endTime = new Date();
 const executionTime = endTime - startTime;
 console.log(`execution time: ${executionTime} ms`);
