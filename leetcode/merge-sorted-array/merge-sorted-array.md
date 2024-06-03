@@ -68,3 +68,4 @@ console.log(result3); // Output: [1]
 // Additional test case
 const result4 = merge([2, 0], 1, [1], 1);
 console.log(result4); // Output: [1, 2]
+```
