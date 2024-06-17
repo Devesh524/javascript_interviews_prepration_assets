@@ -1,8 +1,8 @@
-var rps = function (round) {
+const rps = function (round) {
   let result = [];
   let possibleCases = ['r', 'p', 's'];
 
-  var play = function (playedFor, round) {
+  const play = function (playedFor, round) {
     if (round === 0) {
       result.push(playedFor);
       return;
@@ -16,5 +16,5 @@ var rps = function (round) {
   return result;
 };
 
-var res = rps(2);
+const res = rps(2);
 console.log(res);

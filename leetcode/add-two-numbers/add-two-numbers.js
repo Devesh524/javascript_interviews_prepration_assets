@@ -11,12 +11,12 @@
  * @return {ListNode}
  */
 // Definition for singly-linked list.
-function ListNode(val, next) {
+function ListNode(val, next = null) {
   this.val = val === undefined ? 0 : val;
   this.next = next === undefined ? null : next;
 }
 
-var addTwoNumbers = function (l1, l2) {
+const addTwoNumbers = function (l1, l2) {
   let dummyHead = new ListNode(0);
   let p = l1,
     q = l2,
