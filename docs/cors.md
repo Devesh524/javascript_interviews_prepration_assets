@@ -39,7 +39,6 @@ CORS offers several benefits for web developers and users:
 Here is an example of configuring CORS settings in an Express.js server:
 
 ```javascript
-
 const express = require('express');
 const cors = require('cors');
 
@@ -50,11 +49,13 @@ const app = express();
 app.use(cors());
 
 // Enable CORS for specific origins
-app.use(cors({
-  origin: 'https://example.com',
-  methods: 'GET,POST',
-  allowedHeaders: 'Content-Type,Authorization',
-}));
+app.use(
+  cors({
+    origin: 'https://example.com',
+    methods: 'GET,POST',
+    allowedHeaders: 'Content-Type,Authorization',
+  }),
+);
 
 // Enable CORS for preflight requests
 
@@ -71,7 +72,6 @@ app.use((req, res, next) => {
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
-
 ```
 
 ## Conclusion

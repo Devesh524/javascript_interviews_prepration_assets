@@ -16,7 +16,6 @@ Server-Side Rendering works by following these steps:
 4. **Client Receives HTML**: The client receives the HTML content and starts rendering the page in the browser, which may involve parsing the HTML, loading assets, and executing scripts.
 5. **Client-Side Hydration**: Once the client has rendered the initial HTML content, it may hydrate the page by attaching event listeners, updating the DOM, and fetching additional data or assets as needed.
 
-
 ## Benefits of Server-Side Rendering
 
 Server-Side Rendering offers several benefits for web developers and users:

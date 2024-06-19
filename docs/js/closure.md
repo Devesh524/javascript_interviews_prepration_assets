@@ -38,7 +38,6 @@ Closures work by capturing variables from the outer function's scope and storing
 Here's an example of a closure in JavaScript:
 
 ```javascript
-
 function outerFunction() {
   let outerVariable = 'I am from the outer function';
 
@@ -52,10 +51,6 @@ function outerFunction() {
 let closure = outerFunction();
 
 closure(); // Output: I am from the outer function
-
 ```
 
 In this example, the `innerFunction` is a closure that has access to the `outerVariable` defined in the `outerFunction`'s scope. When the `outerFunction` is called, it returns the `innerFunction`, which retains a reference to the `outerVariable` even after the `outerFunction` has finished executing. When the `closure` is called, it logs the value of the `outerVariable` to the console.
-
-
-

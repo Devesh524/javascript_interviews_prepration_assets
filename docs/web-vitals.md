@@ -1,4 +1,4 @@
-# Core Web Vitals 
+# Core Web Vitals
 
 ## Introduction
 
@@ -34,7 +34,6 @@ Web Vitals are important for several reasons:
 - **User-Centric Design**: Web Vitals promote a user-centric approach to web development by focusing on metrics that reflect the real-world experience of users, rather than technical benchmarks or arbitrary thresholds.
 - **Data-Driven Decisions**: Web Vitals provide actionable data and insights that help developers prioritize tasks, allocate resources, and make informed decisions about optimizing web performance.
 - **Performance Budgets**: Web Vitals can be used to set performance budgets for web projects, ensuring that websites meet user expectations, business goals, and industry standards for performance and user experience.
-
 
 ## How to Improve Web Vitals
 

@@ -31,21 +31,19 @@ Web Workers work by running JavaScript code in a separate thread from the main U
 Here's an example of creating a Web Worker in JavaScript:
 
 ```javascript
-
 // Create a new Web Worker
 
 const worker = new Worker('worker.js');
 
 // Handle messages from the Web Worker
 
-worker.onmessage = function(event) {
+worker.onmessage = function (event) {
   console.log('Message received from Web Worker:', event.data);
 };
 
 // Send a message to the Web Worker
 
 worker.postMessage('Hello from the main thread');
-
 ```
 
 In this example, the `Worker` constructor is used to create a new Web Worker and specify the URL of the JavaScript file `worker.js` that contains the code to run in the background. The `onmessage` event handler is used to handle messages sent from the Web Worker, and the `postMessage` method is used to send a message to the Web Worker.
@@ -53,17 +51,15 @@ In this example, the `Worker` constructor is used to create a new Web Worker and
 Here's an example of the code that could be in the `worker.js` file:
 
 ```javascript
-
 // Handle messages from the main thread
 
-self.onmessage = function(event) {
+self.onmessage = function (event) {
   console.log('Message received from main thread:', event.data);
 
   // Send a message back to the main thread
 
   self.postMessage('Hello from the Web Worker');
 };
-
 ```
 
 In this example, the `onmessage` event handler in the Web Worker is used to handle messages sent from the main thread, and the `postMessage` method is used to send a message back to the main thread.
@@ -75,21 +71,19 @@ Shared Web Workers are a type of Web Worker that can be accessed by multiple bro
 Here's an example of creating a Shared Web Worker in JavaScript:
 
 ```javascript
-
 // Create a new Shared Web Worker
 
 const sharedWorker = new SharedWorker('shared-worker.js');
 
 // Handle messages from the Shared Web Worker
 
-sharedWorker.port.onmessage = function(event) {
+sharedWorker.port.onmessage = function (event) {
   console.log('Message received from Shared Web Worker:', event.data);
 };
 
 // Send a message to the Shared Web Worker
 
 sharedWorker.port.postMessage('Hello from the main thread');
-
 ```
 
 In this example, the `SharedWorker` constructor is used to create a new Shared Web Worker and specify the URL of the JavaScript file `shared-worker.js` that contains the code to run in the background. The `onmessage` event handler on the `port` property of the Shared Web Worker is used to handle messages sent from the Shared Web Worker, and the `postMessage` method on the `port` property is used to send a message to the Shared Web Worker.
@@ -97,13 +91,12 @@ In this example, the `SharedWorker` constructor is used to create a new Shared W
 Here's an example of the code that could be in the `shared-worker.js` file:
 
 ```javascript
-
 // Handle messages from the main thread
 
-self.onconnect = function(event) {
+self.onconnect = function (event) {
   const port = event.ports[0];
 
-  port.onmessage = function(event) {
+  port.onmessage = function (event) {
     console.log('Message received from main thread:', event.data);
 
     // Send a message back to the main thread
@@ -111,7 +104,6 @@ self.onconnect = function(event) {
     port.postMessage('Hello from the Shared Web Worker');
   };
 };
-
 ```
 
 In this example, the `onconnect` event handler in the Shared Web Worker is used to handle connections from the main thread, and the `onmessage` event handler on the `port` object is used to handle messages sent from the main thread. The `postMessage` method on the `port` object is used to send a message back to the main thread.

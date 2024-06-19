@@ -64,5 +64,7 @@ By lifting the state up to the `ParentComponent`, both the `ParentComponent` and
 ## Conclusion
 
 Lifting State Up is a powerful technique in React to share state between components. By moving the state to a common ancestor component and passing it down as props, you can create more maintainable and reusable components. This helps to keep the code clean and easy to understand, making it easier to build complex applications in React.
+
 ```
 
+```

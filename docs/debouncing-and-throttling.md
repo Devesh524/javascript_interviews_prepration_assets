@@ -21,11 +21,10 @@ Debouncing works by using a timer to delay the execution of a function until aft
 Here's an example of debouncing in JavaScript:
 
 ```javascript
-
 function debounce(func, delay) {
   let timer;
-  
-  return function() {
+
+  return function () {
     clearTimeout(timer);
     timer = setTimeout(() => {
       func.apply(this, arguments);
@@ -50,7 +49,6 @@ debouncedHandleInput(); // Function is not executed immediately
 // Wait for 300ms
 
 // Output: Input handled
-
 ```
 
 In this example, the `debounce` function takes a function and a delay as arguments and returns a new function that delays the execution of the original function until after the specified delay has passed since the last time the function was called. The `handleInput` function is debounced using the `debounce` function, and when the debounced function is called, it delays the execution of the `handleInput` function until after 300ms have passed since the last time the function was called.
@@ -78,11 +76,10 @@ Throttling works by using a timer to limit the rate at which a function is calle
 Here's an example of throttling in JavaScript:
 
 ```javascript
-
 function throttle(func, delay) {
   let timer;
-  
-  return function() {
+
+  return function () {
     if (!timer) {
       timer = setTimeout(() => {
         func.apply(this, arguments);
@@ -109,7 +106,6 @@ throttledHandleScroll(); // Function is not executed
 // Wait for 300ms
 
 // Output: Scroll handled
-
 ```
 
 In this example, the `throttle` function takes a function and a delay as arguments and returns a new function that limits the rate at which the original function is called. The `handleScroll` function is throttled using the `throttle` function, and when the throttled function is called, it ensures that the `handleScroll` function is only executed at a certain interval, regardless of how many times the function is triggered.

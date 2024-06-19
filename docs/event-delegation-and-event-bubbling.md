@@ -34,21 +34,19 @@ Event delegation works by taking advantage of event bubbling, which is a process
 Here's an example of event delegation in JavaScript:
 
 ```javascript
-
 // Get the parent element
 
 const parentElement = document.getElementById('parent');
 
 // Add an event listener to the parent element
 
-parentElement.addEventListener('click', function(event) {
+parentElement.addEventListener('click', function (event) {
   // Check if the event target is a child element
   if (event.target.classList.contains('child')) {
     // Handle the event on the child element
     console.log('Child element clicked');
   }
 });
-
 ```
 
 In this example, we attach a click event listener to the parent element and check if the event target is a child element with the class `child`. If
@@ -64,7 +62,6 @@ Event delegation is a powerful technique in JavaScript that allows you to handle
 - [MDN Web Docs: Event Delegation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_delegation)
 - [JavaScript.info: Event Delegation](https://javascript.info/event-delegation)
 - [W3Schools: Event Delegation](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-
 
 # Event Bubbling
 
@@ -106,18 +103,16 @@ Event bubbling is useful for several reasons:
 Here's an example of event bubbling in JavaScript:
 
 ```javascript
-
 // Get the parent element
 
 const parentElement = document.getElementById('parent');
 
 // Add an event listener to the parent element
 
-parentElement.addEventListener('click', function(event) {
+parentElement.addEventListener('click', function (event) {
   // Log the event target
   console.log(event.target);
 });
-
 ```
 
 ## Conclusion
@@ -129,4 +124,3 @@ Event bubbling is a powerful mechanism in JavaScript that allows events to propa
 - [MDN Web Docs: Event Bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling)
 - [JavaScript.info: Bubbling and Capturing](https://javascript.info/bubbling-and-capturing)
 - [W3Schools: Event Bubbling](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-

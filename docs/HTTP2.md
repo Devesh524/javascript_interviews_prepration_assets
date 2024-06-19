@@ -27,7 +27,6 @@ HTTP/2 is important for several reasons:
 - **SEO Benefits**: HTTP/2 can provide SEO benefits by improving page load times, reducing bounce rates, and increasing user engagement, which are factors that search engines consider when ranking websites in search results.
 - **Mobile Performance**: HTTP/2 is particularly beneficial for mobile performance, as it reduces latency, optimizes resource loading, and improves the speed of web applications on mobile devices with limited bandwidth and slower connections.
 
-
 # Difference between HTTP/1.1 and HTTP/2
 
 ## HTTP/1.1
@@ -50,7 +49,6 @@ HTTP/2 is important for several reasons:
 - **Web Performance**: HTTP/1.1 can impact web performance by increasing latency, reducing data transfer efficiency, and limiting resource loading optimizations, resulting in slower load times and a poorer user experience for web applications.
 - **SEO Impact**: HTTP/1.1 can impact SEO by increasing page load times, reducing user engagement, and affecting search engine rankings, which consider factors such as performance, usability, and mobile-friendliness when ranking websites in search results.
 - **Mobile Performance**: HTTP/1.1 may not be optimized for mobile performance, as it can increase latency, reduce resource loading efficiency, and impact the speed of web applications on mobile devices with limited bandwidth and slower connections.
-
 
 ### References
 

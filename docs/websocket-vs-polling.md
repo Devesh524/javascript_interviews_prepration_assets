@@ -20,7 +20,6 @@
 Here is an example of using Websocket in a React application:
 
 ```jsx
-
 import React, { useEffect, useState } from 'react';
 
 const WebSocketComponent = () => {
@@ -56,9 +55,7 @@ const WebSocketComponent = () => {
     <div>
       <ul>
         {messages.map((msg, index) => (
-          <li key={index}>
-            {msg.message}
-          </li>
+          <li key={index}>{msg.message}</li>
         ))}
       </ul>
       <input
@@ -69,8 +66,7 @@ const WebSocketComponent = () => {
       <button onClick={sendMessage}>Send</button>
     </div>
   );
-}  
-   
+};
 ```
 
 ## Polling
@@ -93,7 +89,6 @@ const WebSocketComponent = () => {
 Here is an example of using polling in a React application:
 
 ```jsx
-
 import React, { useEffect, useState } from 'react';
 
 const PollingComponent = () => {
@@ -127,24 +122,20 @@ const PollingComponent = () => {
     <div>
       <ul>
         {messages.map((msg, index) => (
-          <li key={index}>
-            {msg.message}
-          </li>
+          <li key={index}>{msg.message}</li>
         ))}
       </ul>
       <input
         type="text"
         value={message}
-        onChange={(e) => setMessage(e.target.value)}  
+        onChange={(e) => setMessage(e.target.value)}
       />
       <button onClick={sendMessage}>Send</button>
     </div>
   );
 };
-   
-``` 
+```
 
 ## Conclusion
 
 Websocket and polling are two common techniques for implementing real-time communication in web applications. Websocket is a more efficient and reliable protocol that provides bidirectional communication between the client and the server. Polling is a simpler technique that involves sending periodic requests to the server to check for updates. The choice between Websocket and polling depends on the requirements of the application and the trade-offs between efficiency, complexity, and security. Websocket is ideal for real-time applications that require low latency and high throughput, while polling is suitable for applications that do not require real-time updates and can tolerate some delay. Both Websocket and polling have their strengths and weaknesses, and the best choice depends on the specific use case and requirements of the application.
-

@@ -16,7 +16,6 @@ The browser rendering process works by following these steps:
 6. **Painting**: The browser paints the pixels on the screen based on the layout and styling information to display the web page to users.
 7. **Compositing**: The browser composites the painted elements to create the final visual representation of the web page, including layers, transparency, and blending effects.
 
-
 ## Rendering Optimization Techniques
 
 To optimize the browser rendering process and improve web performance, developers can use the following techniques:

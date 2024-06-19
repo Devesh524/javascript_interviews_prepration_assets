@@ -1,0 +1,47 @@
+/* JS manipulated styles */
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: inline-block;
+}
+
+/* Appearance Styles */
+
+.slider {
+  margin: 0 auto;
+}
+
+@media (min-width: 50rem) {
+  .slider {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+.slides {
+}
+.frame {
+}
+.slide {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 40%;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.prev,
+.next {
+  height: 2rem;
+  border: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
+  background: #333;
+}

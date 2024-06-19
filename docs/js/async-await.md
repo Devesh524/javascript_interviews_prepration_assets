@@ -25,7 +25,6 @@ Async/await is useful for several reasons:
 Async/await works by using the `async` and `await` keywords to define asynchronous functions and handle asynchronous operations. Here's an example of using async/await in JavaScript:
 
 ```javascript
-
 // Define an asynchronous function
 
 async function fetchData() {
@@ -42,7 +41,6 @@ async function fetchData() {
 // Call the asynchronous function
 
 fetchData();
-
 ```
 
 In this example, the `fetchData` function is defined as an asynchronous function using the `async` keyword. Inside the function, the `await` keyword is used to wait for the completion of asynchronous operations, such as fetching data from an API using the `fetch` function. The `try/catch` block is used to handle any errors that occur during the asynchronous operation.

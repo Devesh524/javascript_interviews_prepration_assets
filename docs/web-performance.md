@@ -10,8 +10,6 @@
 - LCP is measured as the time from navigation to the time when the largest text or image element is rendered within the viewport.
 - LCP is a good indicator of when the main content of the page has loaded.
 
-
-
 ### First Input Delay (FID)
 
 - Measures interactivity.
@@ -29,9 +27,8 @@
 - CLS is a good indicator of how stable the content is on the page.
 - CLS is calculated by multiplying the impact fraction by the distance fraction.
 - The impact fraction is the amount of layout shift that occurs, and the distance fraction is the distance the element has shifted.
-- CLS = impact fraction * distance fraction
-- CLS = ∑ (impact fraction * distance fraction)
-
+- CLS = impact fraction \* distance fraction
+- CLS = ∑ (impact fraction \* distance fraction)
 
 ### Time to First Byte (TTFB)
 
@@ -58,7 +55,6 @@
 - INP is measured as the time from navigation to when the page is reliably interactive.
 - INP is a good indicator of when the page is ready to respond to user input.
 
-
 ### Speed Index
 
 - Measures how quickly content is visually displayed during page load.
@@ -66,7 +62,6 @@
 - To provide a good user experience, pages should strive to have a Speed Index of less than 4,000 milliseconds.
 - Speed Index is a good indicator of how quickly the contents of a page are visibly populated.
 - Speed Index is measured as the average time at which visible parts of the page are displayed.
-
 
 ## Tools
 
@@ -82,4 +77,3 @@
 - [Web Vitals - Google Developers](https://developers.google.com/web/fundamentals/performance/vitals/)
 - [Web Vitals - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Performance/Largest_Contentful_Paint)
 - [Web Vitals - Wikipedia](https://en.wikipedia.org/wiki/Web_Vitals)
-

@@ -9,7 +9,8 @@ CSP works by defining a whitelist of trusted sources of content, and instructs t
 ### Example
 
 ```html
-Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.google.com
+Content-Security-Policy: default-src 'self'; script-src 'self'
+https://apis.google.com
 ```
 
 In this example, the CSP header specifies that the default source for content is the same origin (`'self'`), and that scripts can only be loaded from the same origin (`'self'`) or from `https://apis.google.com`.
@@ -17,7 +18,6 @@ In this example, the CSP header specifies that the default source for content is
 ## Strict-Transport-Security (HSTS)
 
 HTTP Strict Transport Security (HSTS) is a web security policy mechanism that helps to protect websites
-
 
 ### Example
 
@@ -74,7 +74,6 @@ Feature-Policy: geolocation 'self'; midi 'none'; sync-x
 ```
 
 In this example, the `Feature-Policy` header specifies that the site can use the geolocation API from the same origin (`'self'`), but cannot use the MIDI API (`'none'`), and can use the sync-x feature.
-
 
 ## Conclusion
 
