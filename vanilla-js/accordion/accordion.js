@@ -1,7 +1,11 @@
-document
-  .getElementsByClassName('accordion')[0]
-  .addEventListener('click', function (e) {
-    document
-      .getElementsByClassName('accordion-content')[0]
-      .classList.toggle('active');
-  });
+document.addEventListener('DOMContentLoaded', () => {});
+
+const element = document.getElementsByClassName('accordion-title');
+
+const accordion = document.getElementsByClassName('accordion-toggle');
+
+const accordionContent = document.getElementsByClassName('accordion-content');
+
+accordion[0].addEventListener('onclick', () => {
+  console.log('first');
+});
